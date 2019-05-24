@@ -38,7 +38,7 @@ int main(int argc, char const *argv[]) {
 }
 
 int determinante(int matriz[L][C]){
-  int matriz_aux[L+2][C+2];
+  int matriz_aux[L][C+2];
   for (size_t i = 0; i < L; i++) {
     for (size_t j = 0; j < (C + 2); j++) {
       if(j > 3){matriz_aux[i][j] = matriz[i][j - 4];}
